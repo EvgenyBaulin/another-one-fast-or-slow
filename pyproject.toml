@@ -1,0 +1,18 @@
+[project]
+name = "fast-or-slow"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "lightgbm>=4.7.0",
+    "numpy>=2.5.4",
+    "onnx>=1.23.2",
+    "onnxruntime>=1.32.0; sys_platform == 'darwin'",
+    "onnxruntime-gpu[cuda,cudnn]>=1.22; sys_platform == 'linux'",
+    "catboost",
+    "xgboost",
+    "optuna",
+    "scipy",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "sympy>=1.14.0",
+]
